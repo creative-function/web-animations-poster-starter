@@ -1,0 +1,58 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+@import 'reset';
+
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: #eee;
+}
+
+// calculate the ratio of your poster and put it here
+$ratio: 11/17;
+
+.poster {
+	position: absolute;
+	height: 90vh;
+	width: 90vh * $ratio;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	overflow: hidden;
+
+	background-color: #454454;
+	box-shadow: 0 20px 30px rgba(0,0,0,0.3);
+
+	// temporary background image just for help positioning during development
+	background-image: url("../img/guide-layer.png");
+	background-size: contain;
+
+	// put all elements in the poster, like this, with % for sizing and positioning.
+	.white-star-top-left-corner {
+		width: 8%;
+		position: absolute;
+		top: 4%;
+		left: 15%;
+	}
+
+}
+
+
