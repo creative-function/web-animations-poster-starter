@@ -30,10 +30,11 @@ $ratio: 11/17;
 
 .poster {
 	position: absolute;
-	height: 90vh;
-	width: 90vh * $ratio;
+	height: 82.8vh;
+	width: 58.5vh;
 	top: 50%;
 	left: 50%;
+	// opacity: .5;
 	transform: translate(-50%, -50%);
 
 	overflow: hidden;
@@ -42,15 +43,59 @@ $ratio: 11/17;
 	box-shadow: 0 20px 30px rgba(0,0,0,0.3);
 
 	// temporary background image just for help positioning during development
-	background-image: url("../img/guide-layer.png");
+	background-image: url("../img/ogPoster.png");
 	background-size: contain;
 
 	// put all elements in the poster, like this, with % for sizing and positioning.
-	.white-star-top-left-corner {
-		width: 8%;
+	
+	
+	.eyeA-top-left {
+		width: 25.5%;
 		position: absolute;
-		top: 4%;
-		left: 15%;
+		top: 3%;
+		left: 10%;
+	}
+
+	.eyeB-top-right {
+		width: 8.5%;
+		position: absolute;
+		top: 18.5%;
+		left: 66%;
+	}
+
+	.eyeC-middle-right {
+		width: 25.2%;
+		position: absolute;
+		top: 37.5%;
+		left: 68.9%;
+	}
+
+	.eyeD-middle-eye {
+		width: 35.2%;
+		position: absolute;
+		top: 20%;
+		left: 33%;
+	}
+
+	.eyeE-middle-left {
+		width: 16%;
+		position: absolute;
+		top: 40.5%;
+		left: 13%;
+	}
+
+	.eyeF-bottom-right {
+		width: 13.5%;
+		position: absolute;
+		top: 75%;
+		left: 81%;
+	}
+
+	.eyeG-bottom-left {
+		width: 21.5%;
+		position: absolute;
+		top: 65%;
+		left: 13%;
 	}
 
 }

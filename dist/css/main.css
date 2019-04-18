@@ -76,8 +76,8 @@ body {
 
 .poster {
 	position: absolute;
-	height: 90vh;
-	width: 58.23529vh;
+	height: 82.8vh;
+	width: 58.5vh;
 	top: 50%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
@@ -85,15 +85,57 @@ body {
 	overflow: hidden;
 	background-color: #454454;
 	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
-	background-image: url("../img/guide-layer.png");
+	background-image: url("../img/ogPoster.png");
 	background-size: contain;
 }
 
-.poster .white-star-top-left-corner {
-	width: 8%;
+.poster .eyeA-top-left {
+	width: 25.5%;
 	position: absolute;
-	top: 4%;
-	left: 15%;
+	top: 3%;
+	left: 10%;
+}
+
+.poster .eyeB-top-right {
+	width: 8.5%;
+	position: absolute;
+	top: 18.5%;
+	left: 66%;
+}
+
+.poster .eyeC-middle-right {
+	width: 25.2%;
+	position: absolute;
+	top: 37.5%;
+	left: 68.9%;
+}
+
+.poster .eyeD-middle-eye {
+	width: 35.2%;
+	position: absolute;
+	top: 20%;
+	left: 33%;
+}
+
+.poster .eyeE-middle-left {
+	width: 16%;
+	position: absolute;
+	top: 40.5%;
+	left: 13%;
+}
+
+.poster .eyeF-bottom-right {
+	width: 13.5%;
+	position: absolute;
+	top: 75%;
+	left: 81%;
+}
+
+.poster .eyeG-bottom-left {
+	width: 21.5%;
+	position: absolute;
+	top: 65%;
+	left: 13%;
 }
 
 /*# sourceMappingURL=main.css.map */
