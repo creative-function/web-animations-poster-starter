@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.js"],"names":["console","log"],"mappings":";;AAAAA,QAAQC,GAAR,CAAY,2BAAZ","file":"main.js","sourcesContent":["console.log(\"Hello World from main.js!\");"]}
+{"version":3,"sources":["main.js"],"names":["console","log"],"mappings":";;AAAAA,QAAQC,GAAR,CAAY,gCAAZ","file":"main.js","sourcesContent":["console.log(\"Hello animations from main.js!\");"]}
