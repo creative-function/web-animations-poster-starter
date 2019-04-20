@@ -175,22 +175,30 @@ body {
 .poster .bkgrnd-stripes .stripe-white-right {
 	width: 9%;
 	right: 27%;
+	-webkit-animation: going-up 10s infinite linear;
+	        animation: going-up 10s infinite linear;
 }
 
 .poster .bkgrnd-stripes .stripe-white-left {
 	width: 100%;
 	top: -5%;
 	left: -10%;
+	-webkit-animation: cream-left-to-right 3s infinite ease-out;
+	        animation: cream-left-to-right 3s infinite ease-out;
 }
 
 .poster .bkgrnd-stripes .stripe-orange-middle {
 	width: 100%;
 	top: 40%;
+	-webkit-animation: orange-right-to-left 5s infinite ease;
+	        animation: orange-right-to-left 5s infinite ease;
 }
 
 .poster .bkgrnd-stripes .stripe-black-top {
 	width: 100%;
 	top: 17%;
+	-webkit-animation: left-to-right 1s infinite linear;
+	        animation: left-to-right 1s infinite linear;
 }
 
 .poster .poster-title {
@@ -235,6 +243,102 @@ body {
 
 .poster .poster-title .actor-credits .actor-RD {
 	border-style: none;
+}
+
+@-webkit-keyframes going-up {
+	0% {
+		top: 0%;
+	}
+	100% {
+		top: -20%;
+	}
+}
+
+@keyframes going-up {
+	0% {
+		top: 0%;
+	}
+	100% {
+		top: -20%;
+	}
+}
+
+@-webkit-keyframes left-to-right {
+	0% {
+		left: -2%;
+	}
+	100% {
+		left: 0%;
+	}
+}
+
+@keyframes left-to-right {
+	0% {
+		left: -2%;
+	}
+	100% {
+		left: 0%;
+	}
+}
+
+@-webkit-keyframes orange-right-to-left {
+	0% {
+		top: 40%;
+		left: 0%;
+	}
+	50% {
+		top: 35%;
+		left: 1%;
+	}
+	100% {
+		top: 40%;
+		left: -1%;
+	}
+}
+
+@keyframes orange-right-to-left {
+	0% {
+		top: 40%;
+		left: 0%;
+	}
+	50% {
+		top: 35%;
+		left: 1%;
+	}
+	100% {
+		top: 40%;
+		left: -1%;
+	}
+}
+
+@-webkit-keyframes cream-left-to-right {
+	0% {
+		top: 5%;
+		left: -13%;
+	}
+	50% {
+		top: -5%;
+		left: -13%;
+	}
+	100% {
+		top: 5%;
+		left: -13%;
+	}
+}
+
+@keyframes cream-left-to-right {
+	0% {
+		top: 5%;
+		left: -13%;
+	}
+	50% {
+		top: -5%;
+		left: -13%;
+	}
+	100% {
+		top: 5%;
+		left: -13%;
+	}
 }
 
 /*# sourceMappingURL=main.css.map */

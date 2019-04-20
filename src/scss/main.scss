@@ -174,19 +174,24 @@ $ratio: 11/17;
 		.stripe-white-right{
 			width:9%;
 			right:27%;
+			animation: going-up 10s infinite linear;
 		}
 		.stripe-white-left{
 			width:100%;
 			top:-5%;
 			left:-10%;
+			animation: cream-left-to-right 3s infinite ease-out; 
 		}
 		.stripe-orange-middle{
 			width:100%;
 			top:40%;
+			animation: orange-right-to-left 5s infinite ease;
+
 		}
 		.stripe-black-top{
 			width:100%;
 			top:17%;
+			animation: left-to-right 1s infinite linear;
 		}
 	}
 
@@ -238,4 +243,26 @@ $ratio: 11/17;
 	}
 }
 
+
+@keyframes going-up{
+	0% {top: 0%;}
+	100%{ top:-20%;}
+}
+
+@keyframes left-to-right{
+	0% {left: -2%;}
+	100%{ left:0%;}
+}
+
+@keyframes orange-right-to-left{
+	0% {top: 40%; left:0%;}
+	50% {top: 35%; left:1%;}
+	100% {top: 40%; left:-1%;}
+}
+
+@keyframes cream-left-to-right{
+	0% {top: 5%; left:-13%;}
+	50% {top: -5%; left:-13%;}
+	100% {top: 5%; left:-13%;}
+}
 
