@@ -13,7 +13,7 @@ TABLE OF CONTENTS:
 */
 
 @import 'reset';
-
+@import 'animations';
 
 
 $posterFontreg: 'Nova Round', cursive;
@@ -195,7 +195,7 @@ $ratio: 11/17;
 	.poster-title{
 		position: relative;
 		top:81.5%;
-		left:30.33%;
+		left:.33%;
 		
 		
 		font-family: $posterFontalt;
