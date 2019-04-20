@@ -70,6 +70,10 @@ table {
 	box-sizing: border-box;
 }
 
+img {
+	position: absolute;
+}
+
 body {
 	background: #eee;
 }
@@ -83,59 +87,154 @@ body {
 	-webkit-transform: translate(-50%, -50%);
 	        transform: translate(-50%, -50%);
 	overflow: hidden;
-	background-color: #454454;
+	background-color: #fff0ce;
 	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
-	background-image: url("../img/ogPoster.png");
-	background-size: contain;
+	background-image: url("../img/tealBckgrnd@2x.png");
+	background-size: 105.55%;
+	background-position: 25% 90%;
 }
 
-.poster .eyeA-top-left {
-	width: 25.5%;
-	position: absolute;
+.poster .eye-images .eyeA-top-left {
+	width: 26.5%;
 	top: 3%;
 	left: 10%;
 }
 
-.poster .eyeB-top-right {
+.poster .eye-images .eyeB-top-right {
 	width: 8.5%;
-	position: absolute;
 	top: 18.5%;
 	left: 66%;
 }
 
-.poster .eyeC-middle-right {
+.poster .eye-images .eyeC-middle-right {
 	width: 25.2%;
-	position: absolute;
 	top: 37.5%;
 	left: 68.9%;
 }
 
-.poster .eyeD-middle-eye {
+.poster .eye-images .eyeD-middle-eye {
 	width: 35.2%;
-	position: absolute;
 	top: 20%;
 	left: 33%;
 }
 
-.poster .eyeE-middle-left {
+.poster .eye-images .eyeE-middle-left {
 	width: 16%;
-	position: absolute;
 	top: 40.5%;
 	left: 13%;
 }
 
-.poster .eyeF-bottom-right {
+.poster .eye-images .eyeF-bottom-right {
 	width: 13.5%;
-	position: absolute;
 	top: 75%;
 	left: 81%;
 }
 
-.poster .eyeG-bottom-left {
-	width: 21.5%;
-	position: absolute;
+.poster .eye-images .eyeG-bottom-left {
+	width: 23.5%;
 	top: 65%;
 	left: 13%;
+}
+
+.poster .eye-hinges .spokeA-eyeB-top-right {
+	width: 2.8%;
+	top: 15%;
+	right: 32%;
+}
+
+.poster .eye-hinges .spokeB-eyeC-middle-right {
+	right: 27%;
+	top: 35%;
+	width: 4.5%;
+}
+
+.poster .eye-hinges .spokeC-eyeE-middle-left {
+	width: 3.8%;
+	top: 35%;
+	left: 26.3%;
+}
+
+.poster .eye-hinges .spokeD-eyeF-bottom-right {
+	width: 6.9%;
+	bottom: 23.5%;
+	right: 14%;
+}
+
+.poster .body-images .orange-tongue {
+	width: 80%;
+	top: 8.7%;
+	left: 11%;
+}
+
+.poster .body-images .navy-tie {
+	width: 39%;
+	top: -1%;
+	left: 30%;
+}
+
+.poster .bkgrnd-stripes .stripe-white-right {
+	width: 9%;
+	right: 27%;
+}
+
+.poster .bkgrnd-stripes .stripe-white-left {
+	width: 100%;
+	top: -5%;
+	left: -10%;
+}
+
+.poster .bkgrnd-stripes .stripe-orange-middle {
+	width: 100%;
+	top: 40%;
+}
+
+.poster .bkgrnd-stripes .stripe-black-top {
+	width: 100%;
+	top: 17%;
+}
+
+.poster .poster-title {
+	position: relative;
+	top: 81.5%;
+	left: 30.33%;
+	font-family: "Righteous", cursive;
+}
+
+.poster .poster-title .creator-credit {
+	font-family: "Nova Round", cursive;
+	font-size: 1.35rem;
+}
+
+.poster .poster-title .movie-title {
+	font-size: 4rem;
+	color: black;
+}
+
+.poster .poster-title .mt-shadow {
+	position: absolute;
+	top: 20%;
+	left: -1%;
+	color: #c05337;
+	border-bottom: 3px solid black;
+}
+
+.poster .poster-title .actor-credits {
+	position: absolute;
+	display: -webkit-box;
+	display: flex;
+	left: -1.5%;
+	font-family: "Nova Round", cursive;
+	font-size: .62rem;
+}
+
+.poster .poster-title .actor-credits p {
+	border-right: 1px solid black;
+	padding: 3px;
+	margin: 1px;
+}
+
+.poster .poster-title .actor-credits .actor-RD {
+	border-style: none;
 }
 
 /*# sourceMappingURL=main.css.map */

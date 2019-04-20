@@ -15,10 +15,27 @@ TABLE OF CONTENTS:
 @import 'reset';
 
 
+
+$posterFontreg: 'Nova Round', cursive;
+$posterFontbold: 'Nova Mono', monospace;
+$posterFontalt: 'Righteous', cursive;
+$posterFontfun: 'Barrio', cursive;
+
+$fontColor-orange: #c05337;
+$posterColor-cream:#fff0ce;
+$posterColor-blue:#92cfc5;
+
+
+
+
 /* 1. Main Layout ================================= */
 
 * {
 	box-sizing: border-box;
+}
+
+img{
+	position: absolute;
 }
 
 body {
@@ -39,65 +56,186 @@ $ratio: 11/17;
 
 	overflow: hidden;
 
-	background-color: #454454;
+	background-color: $posterColor-cream;
 	box-shadow: 0 20px 30px rgba(0,0,0,0.3);
 
 	// temporary background image just for help positioning during development
-	background-image: url("../img/ogPoster.png");
-	background-size: contain;
+	background-image: url("../img/tealBckgrnd@2x.png");
+	background-size: 105.55%;
+	background-position: 25% 90%;
+
+	// 	left top
+	// left center
+	// left bottom
+	// right top
+	// right center
+	// right bottom
+	// center top
+	// center center
+	// center bottom
 
 	// put all elements in the poster, like this, with % for sizing and positioning.
 	
+	.eye-images{
+
+		.eyeA-top-left {
+			width: 26.5%;
+			top: 3%;
+			left: 10%;
+		}
 	
-	.eyeA-top-left {
-		width: 25.5%;
-		position: absolute;
-		top: 3%;
-		left: 10%;
+		.eyeB-top-right {
+			width: 8.5%;
+			top: 18.5%;
+			left: 66%;
+		}
+		
+		.eyeC-middle-right {
+			width: 25.2%;
+			top: 37.5%;
+			left: 68.9%;
+		}
+	
+		.eyeD-middle-eye {
+			width: 35.2%;
+			top: 20%;
+			left: 33%;
+		}
+	
+		.eyeE-middle-left {
+			width: 16%;
+			top: 40.5%;
+			left: 13%;
+		}
+	
+	
+		.eyeF-bottom-right {
+			width: 13.5%;
+			top: 75%;
+			left: 81%;
+		}
+	
+	
+		.eyeG-bottom-left {
+			width: 23.5%;
+			top: 65%;
+			left: 13%;
+		}
+
+	}
+	
+	.eye-hinges{
+
+		.spokeA-eyeB-top-right{
+			width:2.8%;
+			top:15%;
+			right:32%;
+		}
+
+		.spokeB-eyeC-middle-right{
+			right:27%;
+			top:35%;
+			width:4.5%;
+	
+		}
+	
+		.spokeC-eyeE-middle-left{
+			width:3.8%;
+			top:35%;
+			left:26.3%;		
+		}
+
+		.spokeD-eyeF-bottom-right{
+			width:6.9%;
+			bottom:23.5%;
+			right:14%;
+	
+		}
+
 	}
 
-	.eyeB-top-right {
-		width: 8.5%;
-		position: absolute;
-		top: 18.5%;
-		left: 66%;
+	.body-images{
+
+		.orange-tongue{
+			width:80%;
+			top:8.7%;
+			left:11%;
+		}
+	
+		.navy-tie{
+			width:39%;
+			top:-1%;
+			left:30%;
+		}
+	
 	}
 
-	.eyeC-middle-right {
-		width: 25.2%;
-		position: absolute;
-		top: 37.5%;
-		left: 68.9%;
+	.bkgrnd-stripes{
+		.stripe-white-right{
+			width:9%;
+			right:27%;
+		}
+		.stripe-white-left{
+			width:100%;
+			top:-5%;
+			left:-10%;
+		}
+		.stripe-orange-middle{
+			width:100%;
+			top:40%;
+		}
+		.stripe-black-top{
+			width:100%;
+			top:17%;
+		}
 	}
 
-	.eyeD-middle-eye {
-		width: 35.2%;
-		position: absolute;
-		top: 20%;
-		left: 33%;
-	}
+	/// TEXT ///
 
-	.eyeE-middle-left {
-		width: 16%;
-		position: absolute;
-		top: 40.5%;
-		left: 13%;
-	}
+	.poster-title{
+		position: relative;
+		top:81.5%;
+		left:30.33%;
+		
+		
+		font-family: $posterFontalt;
+		
+		.creator-credit{
+			font-family: $posterFontreg;
+			font-size:1.35rem;
+		}
+		.movie-title{
+			font-size: 4rem;
+			color:black;
+		}
+		.mt-shadow{
+			position: absolute;
+			top:20%;
+			left:-1%;
+			color:$fontColor-orange;
+			border-bottom: 3px solid black;
 
-	.eyeF-bottom-right {
-		width: 13.5%;
-		position: absolute;
-		top: 75%;
-		left: 81%;
-	}
+		}
+		
+		.actor-credits{
+			position: absolute;
+			display: flex;
+			left:-1.5%;
+			font-family: $posterFontreg;
+			font-size: .62rem;
+			
+			
+			p{
+				border-right:1px solid black;
+				padding:3px;
+				margin:1px;
+			}
 
-	.eyeG-bottom-left {
-		width: 21.5%;
-		position: absolute;
-		top: 65%;
-		left: 13%;
+			.actor-RD{
+				border-style:none;
+			}
+		}
 	}
-
 }
 
 
