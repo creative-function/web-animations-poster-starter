@@ -183,8 +183,8 @@ body {
 	width: 100%;
 	top: -5%;
 	left: -10%;
-	-webkit-animation: cream-left-to-right 3s infinite ease-out;
-	        animation: cream-left-to-right 3s infinite ease-out;
+	-webkit-animation: cream-left-to-right 10s infinite ease-out;
+	        animation: cream-left-to-right 10s infinite ease-out;
 }
 
 .poster .bkgrnd-stripes .stripe-orange-middle {
@@ -203,18 +203,18 @@ body {
 
 .poster .poster-title {
 	position: relative;
-	top: 81.5%;
-	left: 30.33%;
+	top: 80.2%;
+	left: 25.33%;
 	font-family: "Righteous", cursive;
 }
 
 .poster .poster-title .creator-credit {
 	font-family: "Nova Round", cursive;
-	font-size: 1.35rem;
+	font-size: 1.20rem;
 }
 
 .poster .poster-title .movie-title {
-	font-size: 4rem;
+	font-size: 3.5rem;
 	color: black;
 }
 
@@ -292,7 +292,7 @@ body {
 	}
 	100% {
 		top: 40%;
-		left: -1%;
+		left: 0%;
 	}
 }
 
@@ -307,7 +307,7 @@ body {
 	}
 	100% {
 		top: 40%;
-		left: -1%;
+		left: 0%;
 	}
 }
 
