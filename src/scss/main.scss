@@ -65,15 +65,7 @@ $ratio: 11/17;
 	background-size: 105.55%;
 	background-position: 25% 90%;
 
-	// 	left top
-	// left center
-	// left bottom
-	// right top
-	// right center
-	// right bottom
-	// center top
-	// center center
-	// center bottom
+	font-size: 10%;
 
 	// put all elements in the poster, like this, with % for sizing and positioning.
 	
@@ -137,12 +129,12 @@ $ratio: 11/17;
 
 	}
 	
-		.moving-pupil{
-			position: absolute;
-			top:65%;
-			left:13%;
-			width:50%;
-			height: 50%;
+	.moving-pupil{
+		position: absolute;
+		top:65%;
+		left:13%;
+		width:50%;
+		height: 50%;
 
 			.eyeG-eyeball{
 				position:absolute;
@@ -159,9 +151,9 @@ $ratio: 11/17;
 				left:2%;
 				transform-origin:center bottom;
 				animation: look-around-eyeGpupil 15s ease-out .5s infinite;
-			}
-
 		}
+
+	}
 
 	.eyelids-eyeA{
 		position: absolute;
@@ -174,10 +166,11 @@ $ratio: 11/17;
 	
 
 		.eyelid-top-eyeA{
-			width:140px;
-			height: 140px;
+			width:100%;
+			height: 100%;
 			border-radius: 50% 50%;
 			z-index: 998;
+
 			
 			.eyeA-lid1-bottom{
 				display: block;
@@ -206,17 +199,20 @@ $ratio: 11/17;
 	.eyelids-eyeD{
 		position: absolute;
 		top: 20%;
-		left: 32%;
-		width:37%;
+		left: 32.9%;
+		width:35.5%;
 		height: 25%;
 		border-radius: 50% 50%;
 		overflow: hidden;
+		
 	
 		.eyelid-middle-eye{
-			width:182px;
-			height: 182px;
+			
+			width:100%;
+			height: 100%;
 			border-radius: 50% 50%;
 			z-index: 999;
+			
 			
 			.eyeD-lid1-bottom{
 				display: block;
@@ -234,6 +230,7 @@ $ratio: 11/17;
 				top: 100%;
 				width: 100%;
 				height: 0%;
+				border-radius: 50% 50% 50% 0%;
 				border-top: solid 2.5px black;
 				background-color:$fontColor-orange;
 				transition: .4s all;
@@ -244,14 +241,12 @@ $ratio: 11/17;
 	.eyelids-eyeG{
 		position: absolute;
 		top:64%;
-		left:15%;
-		width:22%;
+		left:14.7%;
+		width:22.3%;
 		height: 15%;
 		border-radius: 50% 50%;
 		overflow: hidden;
 		
-		
-
 		.eyelid-bottom-right-eyeG{
 			position: relative;
 			top:0%;
@@ -292,8 +287,21 @@ $ratio: 11/17;
 		}
 		
 		.lashes-top{
-			top:-65%;
-			height: 65%;
+			
+			&.eyeA-lid2-top {
+				top:-55%;
+				height: 55%;
+			}
+
+			&.eyeD-lid2-top {
+				top:-55%;
+				height: 55%;
+			}
+
+			&.eyeG-lid2-top {
+				top:-70%;
+				height: 100%;
+			}
 		}
 	}
 
@@ -373,42 +381,43 @@ $ratio: 11/17;
 	/// TEXT ///
 
 	.poster-title{
-		position: relative;
-		top:82.2%;
-		left:33.33%;
-		
-		
+		position: absolute;
+		bottom:5%;
+		left:29%;
+		width:43%;
 		font-family: $posterFontalt;
+		text-align: center;
 		
 		.creator-credit{
 			font-family: $posterFontreg;
-			font-size:1.20rem;
+			font-size:2.1vh;
 		}
 		.movie-title{
-			font-size: 3.5rem;
+			font-size: 7vh;
+			letter-spacing: 0.2vh;
 			color:black;
-		}
-		.mt-shadow{
-			position: absolute;
-			top:20%;
+			position: relative;
+			top:65%;
 			left:-1%;
 			color:$fontColor-orange;
+			text-shadow: 5px 2px 0 black;
 			border-bottom: 3px solid black;
-
 		}
 		
 		.actor-credits{
-			position: absolute;
+			position: relative;
 			display: flex;
+			bottom:-100%;
 			left:-1.5%;
 			font-family: $posterFontreg;
-			font-size: .62rem;
+			font-size: 1vh;
 			
 			
 			p{
 				border-right:1px solid black;
-				padding:3px;
-				margin:1px;
+				width:65%;
+				padding:1%;
+				margin:.5%;
 			}
 
 			.actor-RD{
