@@ -173,6 +173,54 @@ body {
 	        animation: look-around-eyeGpupil 15s ease-out .5s infinite;
 }
 
+.poster .eyelids {
+	position: absolute;
+	top: 20%;
+	left: 33%;
+	width: 182px;
+	height: 182px;
+	border-radius: 50% 50%;
+	overflow: hidden;
+}
+
+.poster .eyelids .eyelid-middle-eye {
+	width: 182px;
+	height: 182px;
+	border-radius: 50% 50%;
+	z-index: 999;
+}
+
+.poster .eyelids .eyelid-middle-eye .eyeD-lid1-bottom {
+	display: block;
+	width: 100%;
+	height: 0%;
+	border-bottom: solid 3px black;
+	background-color: #c05337;
+	-webkit-transition: .4s all;
+	transition: .4s all;
+}
+
+.poster .eyelids .eyelid-middle-eye .eyeD-lid2-top {
+	display: block;
+	position: relative;
+	top: 100%;
+	width: 100%;
+	height: 20%;
+	border-top: solid 3px black;
+	background-color: #c05337;
+	-webkit-transition: .4s all;
+	transition: .4s all;
+}
+
+.poster .eyelids:hover .lid1-bottom {
+	height: 100%;
+}
+
+.poster .eyelids:hover .lid2-top {
+	top: -50%;
+	height: 60%;
+}
+
 .poster .eye-hinges .spokeA-eyeB-top-right {
 	width: 2.8%;
 	top: 15%;
