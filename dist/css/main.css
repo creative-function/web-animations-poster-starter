@@ -65,280 +65,6 @@ table {
 	border-spacing: 0;
 }
 
-/* 1. Main Layout ================================= */
-* {
-	box-sizing: border-box;
-}
-
-img {
-	position: absolute;
-}
-
-body {
-	background: #eee;
-}
-
-.poster {
-	position: absolute;
-	height: 82.8vh;
-	width: 58.5vh;
-	top: 50%;
-	left: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	        transform: translate(-50%, -50%);
-	overflow: hidden;
-	background-color: #fff0ce;
-	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
-	background-image: url("../img/tealBckgrnd@2x.png");
-	background-size: 105.55%;
-	background-position: 25% 90%;
-}
-
-.poster .eye-images .eyeA-top-left {
-	width: 26.5%;
-	top: 3%;
-	left: 10.5%;
-	-webkit-transform-origin: center right;
-	        transform-origin: center right;
-	-webkit-transform-origin: center;
-	        transform-origin: center;
-	-webkit-animation: rotate-eyeA 25s linear 0s infinite;
-	        animation: rotate-eyeA 25s linear 0s infinite;
-}
-
-.poster .eye-images .eyeB-top-right {
-	width: 8.5%;
-	top: 18.5%;
-	left: 66%;
-	-webkit-transform-origin: top left;
-	        transform-origin: top left;
-	-webkit-animation: look-around-eyeB 15s ease-in-out 1s infinite;
-	        animation: look-around-eyeB 15s ease-in-out 1s infinite;
-}
-
-.poster .eye-images .eyeC-middle-right {
-	width: 25.2%;
-	top: 37.5%;
-	left: 68.9%;
-	-webkit-transform-origin: center left;
-	        transform-origin: center left;
-	-webkit-animation: look-around-eyeC 25s linear .5s infinite;
-	        animation: look-around-eyeC 25s linear .5s infinite;
-}
-
-.poster .eye-images .eyeD-middle-eye {
-	width: 35.2%;
-	top: 20%;
-	left: 33%;
-	-webkit-transform-origin: center;
-	        transform-origin: center;
-	-webkit-animation: rotate-eyeD 25s linear 0s infinite;
-	        animation: rotate-eyeD 25s linear 0s infinite;
-}
-
-.poster .eye-images .eyeE-middle-left {
-	width: 16%;
-	top: 40.5%;
-	left: 13%;
-	-webkit-transform-origin: top right;
-	        transform-origin: top right;
-	-webkit-animation: look-around-eyeE 10s linear .5s infinite;
-	        animation: look-around-eyeE 10s linear .5s infinite;
-}
-
-.poster .eye-images .eyeF-bottom-right {
-	width: 13.5%;
-	top: 75%;
-	left: 81%;
-	-webkit-transform-origin: top center;
-	        transform-origin: top center;
-	-webkit-animation: look-around-eyeF 10s linear .5s infinite;
-	        animation: look-around-eyeF 10s linear .5s infinite;
-}
-
-.poster .eye-images .moving-pupil {
-	position: absolute;
-	top: 65%;
-	left: 13%;
-}
-
-.poster .eye-images .moving-pupil .eyeG-pupil {
-	position: relative;
-	width: 85%;
-	top: -15%;
-	left: -15%;
-	-webkit-transform-origin: center bottom;
-	        transform-origin: center bottom;
-	-webkit-animation: look-around-eyeGpupil 15s ease-out .5s infinite;
-	        animation: look-around-eyeGpupil 15s ease-out .5s infinite;
-}
-
-.poster .eyelids-eyeA {
-	position: absolute;
-	top: 3%;
-	left: 10%;
-	width: 140px;
-	height: 140px;
-	border-radius: 50% 50%;
-	overflow: hidden;
-}
-
-.poster .eyelids-eyeA .eyelid-top-eyeA {
-	width: 140px;
-	height: 140px;
-	border-radius: 50% 50%;
-	z-index: 998;
-}
-
-.poster .eyelids-eyeA .eyelid-top-eyeA .eyeA-lid1-bottom {
-	display: block;
-	width: 100%;
-	height: 0%;
-	border-bottom: solid 2.5 black;
-	border-radius: 0 0 50% 50%;
-	background-color: #c05337;
-	-webkit-transition: .4s all;
-	transition: .4s all;
-}
-
-.poster .eyelids-eyeA .eyelid-top-eyeA .eyeA-lid2-top {
-	display: block;
-	position: relative;
-	top: 100%;
-	width: 100%;
-	height: 20%;
-	border-top: solid 2.5px black;
-	border-radius: 50% 50% 50% 0%;
-	background-color: #c05337;
-	-webkit-transition: .4s all;
-	transition: .4s all;
-}
-
-.poster .eyelids-eyeD {
-	position: absolute;
-	top: 20%;
-	left: 33%;
-	width: 182px;
-	height: 182px;
-	border-radius: 50% 50%;
-	overflow: hidden;
-}
-
-.poster .eyelids-eyeD .eyelid-middle-eye {
-	width: 182px;
-	height: 182px;
-	border-radius: 50% 50%;
-	z-index: 999;
-}
-
-.poster .eyelids-eyeD .eyelid-middle-eye .eyeD-lid1-bottom {
-	display: block;
-	width: 100%;
-	height: 0%;
-	border-bottom: solid 2.5 black;
-	background-color: #c05337;
-	-webkit-transition: .4s all;
-	transition: .4s all;
-}
-
-.poster .eyelids-eyeD .eyelid-middle-eye .eyeD-lid2-top {
-	display: block;
-	position: relative;
-	top: 100%;
-	width: 100%;
-	height: 20%;
-	border-top: solid 2.5px black;
-	background-color: #c05337;
-	-webkit-transition: .4s all;
-	transition: .4s all;
-}
-
-.poster .eyelids-eyeG {
-	position: absolute;
-	top: 65%;
-	left: 13%;
-	width: 140px;
-	height: 140px;
-	border-radius: 50% 50%;
-	overflow: hidden;
-}
-
-.poster .eyelids-eyeG .eyelid-bottom-right-eyeG {
-	width: 140px;
-	height: 140px;
-	border-radius: 50% 50%;
-	z-index: 998;
-}
-
-.poster .eyelids-eyeG .eyelid-bottom-right-eyeG .eyeG-lid1-bottom {
-	display: block;
-	width: 100%;
-	height: 0%;
-	border-bottom: solid 2.5 black;
-	border-radius: -50% -50% 0 0;
-	background-color: #c05337;
-	-webkit-transition: .4s all;
-	transition: .4s all;
-}
-
-.poster .eyelids-eyeG .eyelid-bottom-right-eyeG .eyeG-lid2-top {
-	display: block;
-	position: relative;
-	top: 100%;
-	width: 100%;
-	height: 20%;
-	border-top: solid 2.5px black;
-	border-radius: -50% -50% 0 0;
-	background-color: #c05337;
-	-webkit-transition: .4s all;
-	transition: .4s all;
-}
-
-.poster .blink:hover .lashes-bottom {
-	height: 100%;
-}
-
-.poster .blink:hover .lashes-top {
-	top: -50%;
-	height: 60%;
-}
-
-.poster .eye-hinges .spokeA-eyeB-top-right {
-	width: 2.8%;
-	top: 15%;
-	right: 32%;
-}
-
-.poster .eye-hinges .spokeB-eyeC-middle-right {
-	right: 27%;
-	top: 35%;
-	width: 4.5%;
-}
-
-.poster .eye-hinges .spokeC-eyeE-middle-left {
-	width: 3.8%;
-	top: 35%;
-	left: 26.3%;
-}
-
-.poster .eye-hinges .spokeD-eyeF-bottom-right {
-	width: 6.9%;
-	bottom: 23.5%;
-	right: 14%;
-}
-
-.poster .body-images .orange-tongue {
-	width: 80%;
-	top: 8.7%;
-	left: 11%;
-}
-
-.poster .body-images .navy-tie {
-	width: 39%;
-	top: -1%;
-	left: 30%;
-}
-
 @-webkit-keyframes going-up {
 	0% {
 		top: 0%;
@@ -691,6 +417,280 @@ body {
 		-webkit-transform: rotate(-15deg) translateX(30%) translateY(40%) scale(0.9);
 		        transform: rotate(-15deg) translateX(30%) translateY(40%) scale(0.9);
 	}
+}
+
+/* 1. Main Layout ================================= */
+* {
+	box-sizing: border-box;
+}
+
+img {
+	position: absolute;
+}
+
+body {
+	background: #eee;
+}
+
+.poster {
+	position: absolute;
+	height: 82.8vh;
+	width: 58.5vh;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	        transform: translate(-50%, -50%);
+	overflow: hidden;
+	background-color: #fff0ce;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+	background-image: url("../img/tealBckgrnd@2x.png");
+	background-size: 105.55%;
+	background-position: 25% 90%;
+}
+
+.poster .eye-images .eyeA-top-left {
+	width: 26.5%;
+	top: 3%;
+	left: 10.5%;
+	-webkit-transform-origin: center right;
+	        transform-origin: center right;
+	-webkit-transform-origin: center;
+	        transform-origin: center;
+	-webkit-animation: rotate-eyeA 25s linear 0s infinite;
+	        animation: rotate-eyeA 25s linear 0s infinite;
+}
+
+.poster .eye-images .eyeB-top-right {
+	width: 8.5%;
+	top: 18.5%;
+	left: 66%;
+	-webkit-transform-origin: top left;
+	        transform-origin: top left;
+	-webkit-animation: look-around-eyeB 15s ease-in-out 1s infinite;
+	        animation: look-around-eyeB 15s ease-in-out 1s infinite;
+}
+
+.poster .eye-images .eyeC-middle-right {
+	width: 25.2%;
+	top: 37.5%;
+	left: 68.9%;
+	-webkit-transform-origin: center left;
+	        transform-origin: center left;
+	-webkit-animation: look-around-eyeC 25s linear .5s infinite;
+	        animation: look-around-eyeC 25s linear .5s infinite;
+}
+
+.poster .eye-images .eyeD-middle-eye {
+	width: 35.2%;
+	top: 20%;
+	left: 33%;
+	-webkit-transform-origin: center;
+	        transform-origin: center;
+	-webkit-animation: rotate-eyeD 25s linear 0s infinite;
+	        animation: rotate-eyeD 25s linear 0s infinite;
+}
+
+.poster .eye-images .eyeE-middle-left {
+	width: 16%;
+	top: 40.5%;
+	left: 13%;
+	-webkit-transform-origin: top right;
+	        transform-origin: top right;
+	-webkit-animation: look-around-eyeE 10s linear .5s infinite;
+	        animation: look-around-eyeE 10s linear .5s infinite;
+}
+
+.poster .eye-images .eyeF-bottom-right {
+	width: 13.5%;
+	top: 75%;
+	left: 81%;
+	-webkit-transform-origin: top center;
+	        transform-origin: top center;
+	-webkit-animation: look-around-eyeF 10s linear .5s infinite;
+	        animation: look-around-eyeF 10s linear .5s infinite;
+}
+
+.poster .eye-images .moving-pupil {
+	position: absolute;
+	top: 65%;
+	left: 13%;
+}
+
+.poster .eye-images .moving-pupil .eyeG-pupil {
+	position: relative;
+	width: 85%;
+	top: -15%;
+	left: -15%;
+	-webkit-transform-origin: center bottom;
+	        transform-origin: center bottom;
+	-webkit-animation: look-around-eyeGpupil 15s ease-out .5s infinite;
+	        animation: look-around-eyeGpupil 15s ease-out .5s infinite;
+}
+
+.poster .eyelids-eyeA {
+	position: absolute;
+	top: 3%;
+	left: 9%;
+	width: 29%;
+	height: 19%;
+	border-radius: 50% 50%;
+	overflow: hidden;
+}
+
+.poster .eyelids-eyeA .eyelid-top-eyeA {
+	width: 140px;
+	height: 140px;
+	border-radius: 50% 50%;
+	z-index: 998;
+}
+
+.poster .eyelids-eyeA .eyelid-top-eyeA .eyeA-lid1-bottom {
+	display: block;
+	width: 100%;
+	height: 0%;
+	border-bottom: solid 2.5 black;
+	border-radius: 0 0 50% 50%;
+	background-color: #c05337;
+	-webkit-transition: .4s all;
+	transition: .4s all;
+}
+
+.poster .eyelids-eyeA .eyelid-top-eyeA .eyeA-lid2-top {
+	display: block;
+	position: relative;
+	top: 100%;
+	width: 100%;
+	height: 0%;
+	border-top: solid 2.5px black;
+	border-radius: 50% 50% 50% 0%;
+	background-color: #c05337;
+	-webkit-transition: .4s all;
+	transition: .4s all;
+}
+
+.poster .eyelids-eyeD {
+	position: absolute;
+	top: 20%;
+	left: 32%;
+	width: 37%;
+	height: 25%;
+	border-radius: 50% 50%;
+	overflow: hidden;
+}
+
+.poster .eyelids-eyeD .eyelid-middle-eye {
+	width: 182px;
+	height: 182px;
+	border-radius: 50% 50%;
+	z-index: 999;
+}
+
+.poster .eyelids-eyeD .eyelid-middle-eye .eyeD-lid1-bottom {
+	display: block;
+	width: 100%;
+	height: 0%;
+	border-bottom: solid 2.5 black;
+	background-color: #c05337;
+	-webkit-transition: .4s all;
+	transition: .4s all;
+}
+
+.poster .eyelids-eyeD .eyelid-middle-eye .eyeD-lid2-top {
+	display: block;
+	position: relative;
+	top: 100%;
+	width: 100%;
+	height: 0%;
+	border-top: solid 2.5px black;
+	background-color: #c05337;
+	-webkit-transition: .4s all;
+	transition: .4s all;
+}
+
+.poster .eyelids-eyeG {
+	position: absolute;
+	top: 65.2%;
+	left: 14%;
+	width: 35%;
+	height: 25%;
+	border-radius: 50% 50%;
+	overflow: hidden;
+}
+
+.poster .eyelids-eyeG .eyelid-bottom-right-eyeG {
+	width: 140px;
+	height: 140px;
+	border-radius: 50% 50%;
+	z-index: 998;
+}
+
+.poster .eyelids-eyeG .eyelid-bottom-right-eyeG .eyeG-lid1-bottom {
+	display: block;
+	width: 100%;
+	height: 0%;
+	border-bottom: solid 2.5 black;
+	border-radius: 0 0 50% 50%;
+	background-color: #c05337;
+	-webkit-transition: .4s all;
+	transition: .4s all;
+}
+
+.poster .eyelids-eyeG .eyelid-bottom-right-eyeG .eyeG-lid2-top {
+	display: block;
+	position: relative;
+	top: 100%;
+	width: 100%;
+	height: 0%;
+	border-top: solid 2.5px black;
+	border-radius: 50% 50% 50% 0%;
+	background-color: #c05337;
+	-webkit-transition: .4s all;
+	transition: .4s all;
+}
+
+.poster .blink:hover .lashes-bottom {
+	height: 100%;
+}
+
+.poster .blink:hover .lashes-top {
+	top: -65%;
+	height: 65%;
+}
+
+.poster .eye-hinges .spokeA-eyeB-top-right {
+	width: 2.8%;
+	top: 15%;
+	right: 32%;
+}
+
+.poster .eye-hinges .spokeB-eyeC-middle-right {
+	right: 27%;
+	top: 35%;
+	width: 4.5%;
+}
+
+.poster .eye-hinges .spokeC-eyeE-middle-left {
+	width: 3.8%;
+	top: 35%;
+	left: 26.3%;
+}
+
+.poster .eye-hinges .spokeD-eyeF-bottom-right {
+	width: 6.9%;
+	bottom: 23.5%;
+	right: 14%;
+}
+
+.poster .body-images .orange-tongue {
+	width: 80%;
+	top: 8.7%;
+	left: 11%;
+}
+
+.poster .body-images .navy-tie {
+	width: 39%;
+	top: -1%;
+	left: 30%;
 }
 
 .poster .bkgrnd-stripes .stripe-white-right {
