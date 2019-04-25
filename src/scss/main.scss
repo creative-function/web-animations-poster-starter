@@ -13,7 +13,7 @@ TABLE OF CONTENTS:
 */
 
 @import 'reset';
-@import 'animations';
+// @import 'animations';
 
 
 
@@ -138,21 +138,14 @@ $ratio: 11/17;
 			position: absolute;
 			top:65%;
 			left:13%;
-			
-			.eyeG-iris{
-				position: relative;
-				top:10%;
-				left:4%;
-				transform: scale(.9);
-				transform-origin:center;
-				animation: rotate-eyeGiris 10s linear .5s infinite alternate-reverse;
-			}
+		
 			.eyeG-pupil{
 				position: relative;
-				top:35%;
-				left:-50%;
+				width:85%;
+				top:-15%;
+				left:-15%;
 				transform-origin:center bottom;
-				animation: look-around-eyeGpupil 20s linear .5s infinite;
+				animation: look-around-eyeGpupil 15s ease-out .5s infinite;
 			}
 
 		}
@@ -280,58 +273,3 @@ $ratio: 11/17;
 
 
 
-
-@keyframes rotate-eyeA{
-	0%{transform: rotate(0deg);}
-	25%{transform: rotate(-90deg);}
-	50%{transform: rotate(180deg);}
-	100%{transform: rotate(0deg);}
-}
-
-@keyframes look-around-eyeB{
-	0%{transform: rotate(15deg);}
-	50%{transform: rotate(-85deg);}
-	100%{transform: rotate(15deg);}
-}
-
-@keyframes look-around-eyeC{
-	0%{transform: rotate(0deg);}
-	25%{transform: rotate(-5deg);}
-	50%{transform: rotate(52deg);}
-	100%{transform: rotate(0deg);}
-}
-
-@keyframes rotate-eyeD{
-	0%{transform: rotate(0deg);}
-	25%{transform: rotate(-90deg);}
-	50%{transform: rotate(180deg);}
-	100%{transform: rotate(0deg);}
-}
-
-@keyframes look-around-eyeE{
-	0%{transform: rotate(0deg);}
-	25%{transform: rotate(-5deg);}
-	50%{transform: rotate(52deg);}
-	100%{transform: rotate(0deg);}
-}
-
-@keyframes look-around-eyeF{
-	0%{transform: rotate(-15deg);}
-	50%{transform: rotate(29deg);}
-	100%{transform: rotate(-15deg);}
-}
-
-@keyframes rotate-eyeGiris{
-	0%{transform: rotate(20deg) translateX(5%) translateY(-4%) scale(.9);}
-	50%{transform: rotate(120deg) translateX(15%) translateY(-45%) scale(1)}
-	100%{transform: rotate(20deg) translateX(5%) translateY(-4%) scale(.9);}
-}
-
-
-// @keyframes look-around-eyeGpupil{
-// 	0%{transform: rotate(5deg) translateX(10%) translateY(10%) scale(1);}
-// 	25%{transform: rotate(25deg) translateX(15%) translateY(15%) scale(.9);}
-// 	50%{transform: rotate(35deg) translateX(-15%) translateY(35%) scale(1.1);}
-// 	75%{transform: rotate(25deg) translateX(15%) translateY(15%) scale(.9);}
-// 	100%{transform: rotate(5deg) translateX(10%) translateY(10%) scale(1);}
-// }
