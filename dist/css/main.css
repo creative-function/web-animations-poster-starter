@@ -510,17 +510,27 @@ body {
 	        animation: look-around-eyeF 10s linear .5s infinite;
 }
 
-.poster .eye-images .moving-pupil {
+.poster .moving-pupil {
 	position: absolute;
 	top: 65%;
 	left: 13%;
+	width: 50%;
+	height: 50%;
 }
 
-.poster .eye-images .moving-pupil .eyeG-pupil {
+.poster .moving-pupil .eyeG-eyeball {
+	position: absolute;
+	left: 3%;
+	top: -2%;
+	width: 45%;
+	height: 30%;
+}
+
+.poster .moving-pupil .eyeG-pupil {
 	position: relative;
-	width: 85%;
-	top: -15%;
-	left: -15%;
+	width: 30%;
+	top: 0%;
+	left: 2%;
 	-webkit-transform-origin: center bottom;
 	        transform-origin: center bottom;
 	-webkit-animation: look-around-eyeGpupil 15s ease-out .5s infinite;
@@ -609,17 +619,20 @@ body {
 
 .poster .eyelids-eyeG {
 	position: absolute;
-	top: 65.2%;
-	left: 14%;
-	width: 35%;
-	height: 25%;
+	top: 64%;
+	left: 15%;
+	width: 22%;
+	height: 15%;
 	border-radius: 50% 50%;
 	overflow: hidden;
 }
 
 .poster .eyelids-eyeG .eyelid-bottom-right-eyeG {
-	width: 140px;
-	height: 140px;
+	position: relative;
+	top: 0%;
+	left: 0%;
+	width: 100%;
+	height: 100%;
 	border-radius: 50% 50%;
 	z-index: 998;
 }
