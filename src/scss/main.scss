@@ -13,6 +13,7 @@ TABLE OF CONTENTS:
 */
 
 @import 'reset';
+@import 'animations';
 
 
 
@@ -81,31 +82,46 @@ $ratio: 11/17;
 		.eyeA-top-left {
 			width: 26.5%;
 			top: 3%;
-			left: 10%;
+			left: 10.5%;
+			transform-origin: center right;
+			transform-origin:center;
+			animation: rotate-eyeA 25s linear 0s infinite;
+			
 		}
 	
 		.eyeB-top-right {
 			width: 8.5%;
 			top: 18.5%;
 			left: 66%;
+			transform-origin: top left;
+			animation: look-around-eyeB 15s ease-in-out 1s infinite;			
+
 		}
 		
 		.eyeC-middle-right {
 			width: 25.2%;
 			top: 37.5%;
 			left: 68.9%;
+			transform-origin:center left;
+			animation: look-around-eyeC 25s linear .5s infinite;		
+
 		}
 	
 		.eyeD-middle-eye {
 			width: 35.2%;
 			top: 20%;
 			left: 33%;
+			transform-origin:center;
+			animation: rotate-eyeD 25s linear 0s infinite;	
+			
 		}
 	
 		.eyeE-middle-left {
 			width: 16%;
 			top: 40.5%;
 			left: 13%;
+			transform-origin:top right;
+			animation: look-around-eyeE 10s linear .5s infinite;
 		}
 	
 	
@@ -113,13 +129,31 @@ $ratio: 11/17;
 			width: 13.5%;
 			top: 75%;
 			left: 81%;
+			transform-origin:top center;
+			animation: look-around-eyeF 10s linear .5s infinite;
 		}
 	
 	
-		.eyeG-bottom-left {
-			width: 23.5%;
-			top: 65%;
-			left: 13%;
+		.moving-pupil{
+			position: absolute;
+			top:65%;
+			left:13%;
+			
+			.eyeG-iris{
+				position: relative;
+				top:10%;
+				left:4%;
+				// transform-origin:center;
+				// animation: rotate-eyeG-iris 10s linear .5s infinite;
+			}
+			.eyeG-pupil{
+				position: relative;
+				top:35%;
+				left:-50%;
+				transform-origin:center;
+				animation: look-around-eyeGpupil 20s ease-in-out .2s infinite;
+			}
+
 		}
 
 	}
@@ -244,25 +278,60 @@ $ratio: 11/17;
 }
 
 
-@keyframes going-up{
-	0% {top: 0%;}
-	100%{ top:-20%;}
+
+
+// @keyframes rotate-eyeA{
+// 	0%{transform: rotate(0deg);}
+// 	25%{transform: rotate(-90deg);}
+// 	50%{transform: rotate(180deg);}
+// 	100%{transform: rotate(0deg);}
+// }
+
+// @keyframes look-around-eyeB{
+// 	0%{transform: rotate(15deg);}
+// 	50%{transform: rotate(-85deg);}
+// 	100%{transform: rotate(15deg);}
+// }
+
+// @keyframes look-around-eyeC{
+// 	0%{transform: rotate(0deg);}
+// 	25%{transform: rotate(-5deg);}
+// 	50%{transform: rotate(52deg);}
+// 	100%{transform: rotate(0deg);}
+// }
+
+// @keyframes rotate-eyeD{
+// 	0%{transform: rotate(0deg);}
+// 	25%{transform: rotate(-90deg);}
+// 	50%{transform: rotate(180deg);}
+// 	100%{transform: rotate(0deg);}
+// }
+
+// @keyframes look-around-eyeE{
+// 	0%{transform: rotate(0deg);}
+// 	25%{transform: rotate(-5deg);}
+// 	50%{transform: rotate(52deg);}
+// 	100%{transform: rotate(0deg);}
+// }
+
+// @keyframes look-around-eyeF{
+// 	0%{transform: rotate(-15deg);}
+// 	50%{transform: rotate(29deg);}
+// 	100%{transform: rotate(-15deg);}
+// }
+
+@keyframes rotate-eyeGiris{
+	0%{transform: rotate(0deg);}
+	25%{transform: rotate(-90deg);}
+	50%{transform: rotate(90deg);}
+	100%{transform: rotate(0deg);}
 }
 
-@keyframes left-to-right{
-	0% {left: -2%;}
-	100%{ left:0%;}
-}
 
-@keyframes orange-right-to-left{
-	0% {top: 40%; left:0%;}
-	50% {top: 35%; left:1%;}
-	100% {top: 40%; left:0%;}
+@keyframes look-around-eyeGpupil{
+	0%{transform: rotate(5deg) translateX(10px) translateY(10px) scale(1);}
+	25%{transform: rotate(25deg) translateX(-10px) translateY(-10px) scale(1.1);}
+	50%{transform: rotate(-25deg) translateX(15px) translateY(15px) scale(.9);}
+	75%{transform: rotate(25deg) translateX(-10px) translateY(-15px) scale(1);}
+	100%{transform: rotate(5deg) translateX(10px) translateY(10px);}
 }
-
-@keyframes cream-left-to-right{
-	0% {top: 5%; left:-13%;}
-	50% {top: -5%; left:-13%;}
-	100% {top: 5%; left:-13%;}
-}
-

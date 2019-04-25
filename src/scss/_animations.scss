@@ -1,0 +1,28 @@
+@keyframes going-up{
+	0% {top: 0%;}
+	100%{ top:-20%;}
+}
+
+@keyframes left-to-right{
+	0% {left: -2%;}
+	100%{ left:0%;}
+}
+
+@keyframes orange-right-to-left{
+	0% {top: 40%; left:0%;}
+	50% {top: 35%; left:1%;}
+	100% {top: 40%; left:0%;}
+}
+
+@keyframes cream-left-to-right{
+	0% {top: 5%; left:-13%;}
+	50% {top: -5%; left:-13%;}
+	100% {top: 5%; left:-13%;}
+}
+
+@keyframes look-up-and-down{
+	0%{rotate:(0deg)}
+	25%{rotate:(30deg)}
+	50%{rotate:(-30deg)}
+	100%{rotate:(0deg)}
+}
