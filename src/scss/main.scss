@@ -154,7 +154,46 @@ $ratio: 11/17;
 
 	}
 
-	.eyelids{
+	.eyelids-eyeA{
+		position: absolute;
+		top:3%;
+		left:10%;
+		width:140px;
+		height:140px;
+		border-radius: 50% 50%;
+		overflow: hidden;
+
+		.eyelid-top-eyeA{
+			width:140px;
+			height: 140px;
+			border-radius: 50% 50%;
+			z-index: 998;
+			
+			.eyeA-lid1-bottom{
+				display: block;
+				width: 100%;
+				height: 0%;
+				border-bottom: solid 2.5 black;
+				border-radius: 0 0 50% 50%;
+				background-color:$fontColor-orange;
+				transition: .4s all;
+			}
+
+			.eyeA-lid2-top{
+				display: block;
+				position: relative;
+				top: 100%;
+				width: 100%;
+				height: 20%;
+				border-top: solid 2.5px black;
+				border-radius: 50% 50% 50% 0%;
+				background-color:$fontColor-orange;
+				transition: .4s all;
+			}
+		}
+	}
+
+	.eyelids-eyeD{
 		position: absolute;
 		top: 20%;
 		left: 33%;
@@ -163,6 +202,7 @@ $ratio: 11/17;
 		border-radius: 50% 50%;
 		overflow: hidden;
 
+	
 		.eyelid-middle-eye{
 			width:182px;
 			height: 182px;
@@ -173,7 +213,7 @@ $ratio: 11/17;
 				display: block;
 				width: 100%;
 				height: 0%;
-				border-bottom: solid 3px black;
+				border-bottom: solid 2.5 black;
 				background-color:$fontColor-orange;
 				transition: .4s all;
 				
@@ -185,29 +225,66 @@ $ratio: 11/17;
 				top: 100%;
 				width: 100%;
 				height: 20%;
-				border-top: solid 3px black;
+				border-top: solid 2.5px black;
 				background-color:$fontColor-orange;
 				transition: .4s all;
 			}
 		}
 	}
 	
-	.eyelids:hover {
+	.eyelids-eyeG{
+		position: absolute;
+		top:65%;
+		left:13%;
+		width:140px;
+		height:140px;
+		border-radius: 50% 50%;
+		overflow: hidden;
 
-		.lid1-bottom {
+		.eyelid-bottom-right-eyeG{
+			width:140px;
+			height: 140px;
+			border-radius: 50% 50%;
+			z-index: 998;
+			
+			.eyeG-lid1-bottom{
+				display: block;
+				width: 100%;
+				height: 0%;
+				border-bottom: solid 2.5 black;
+				border-radius: -50% -50% 0 0;
+				background-color:$fontColor-orange;
+				transition: .4s all;
+			}
+
+			.eyeG-lid2-top{
+				display: block;
+				position: relative;
+				top: 100%;
+				width: 100%;
+				height: 20%;
+				border-top: solid 2.5px black;
+				border-radius: -50% -50% 0 0;
+				background-color:$fontColor-orange;
+				transition: .4s all;
+			}
+		}
+	}
+
+	.blink:hover {
+
+		.lashes-bottom {
 			height: 100%;
 			
 		}
 		
-		.lid2-top{
+		.lashes-top{
 			top:-50%;
 			height: 60%;
 			
 		}
+
 	}
-	
-
-
 
 	.eye-hinges{
 
@@ -256,6 +333,8 @@ $ratio: 11/17;
 	}
 
 	.bkgrnd-stripes{
+		@import'animations';
+
 		.stripe-white-right{
 			width:9%;
 			right:27%;
@@ -327,6 +406,5 @@ $ratio: 11/17;
 		}
 	}
 }
-
 
 
