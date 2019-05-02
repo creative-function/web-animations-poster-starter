@@ -11,8 +11,11 @@
  * @author: Jack Doyle, jack@greensock.com
  */
 /* eslint-disable */
+var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(global) !== "undefined") ? global : this || window; //helps ensure compatibility with AMD/RequireJS and CommonJS/Node
+(_gsScope._gsQueue || (_gsScope._gsQueue = [])).push( function() {
 
-import { _gsScope } from "gsap/TweenLite.js";
+	"use strict";
+
 
 	var _PI = Math.PI,
 		_DEG2RAD = _PI / 180,
@@ -904,6 +907,7 @@ import { _gsScope } from "gsap/TweenLite.js";
 			API: 2,
 			global: true,
 			version: "0.9.1",
+			overwriteProps: ["morphSVG"],
 
 			//called when the tween renders for the first time. This is where initial values should be recorded and any setup routines should run.
 			init: function(target, value, tween, index) {
@@ -1197,4 +1201,17 @@ import { _gsScope } from "gsap/TweenLite.js";
 
 
 
-export { MorphSVGPlugin, MorphSVGPlugin as default };
+}); if (_gsScope._gsDefine) { _gsScope._gsQueue.pop()(); }
+//export to AMD/RequireJS and CommonJS/Node (precursor to full modular build system coming at a later date)
+(function(name) {
+	"use strict";
+	var getGlobal = function() {
+		return (_gsScope.GreenSockGlobals || _gsScope)[name];
+	};
+	if (typeof(module) !== "undefined" && module.exports) { //node
+		require("../TweenLite.js");
+		module.exports = getGlobal();
+	} else if (typeof(define) === "function" && define.amd) { //AMD
+		define(["TweenLite"], getGlobal);
+	}
+}("MorphSVGPlugin"));

@@ -13,7 +13,7 @@ TABLE OF CONTENTS:
 */
 
 @import 'reset';
-// @import 'animations';
+@import 'animations';
 
 
 
@@ -77,7 +77,7 @@ $ratio: 11/17;
 			left: 10.5%;
 			transform-origin: center right;
 			transform-origin:center;
-			animation: rotate-eyeA 25s linear 0s infinite;
+			// animation: rotate-eyeA 25s linear 0s infinite;
 			
 		}
 	
@@ -86,7 +86,7 @@ $ratio: 11/17;
 			top: 18.5%;
 			left: 66%;
 			transform-origin: top left;
-			animation: look-around-eyeB 15s ease-in-out 1s infinite;			
+			// animation: look-around-eyeB 15s ease-in-out 1s infinite;			
 
 		}
 		
@@ -95,7 +95,7 @@ $ratio: 11/17;
 			top: 37.5%;
 			left: 68.9%;
 			transform-origin:center left;
-			animation: look-around-eyeC 25s linear .5s infinite;		
+			// animation: look-around-eyeC 25s linear .5s infinite;		
 
 		}
 	
@@ -104,7 +104,7 @@ $ratio: 11/17;
 			top: 20%;
 			left: 33%;
 			transform-origin:center;
-			animation: rotate-eyeD 25s linear 0s infinite;	
+			// animation: rotate-eyeD 25s linear 0s infinite;	
 			
 		}
 
@@ -115,7 +115,7 @@ $ratio: 11/17;
 			top: 40.5%;
 			left: 13%;
 			transform-origin:top right;
-			animation: look-around-eyeE 10s linear .5s infinite;
+			// animation: look-around-eyeE 10s linear .5s infinite;
 		}
 	
 	
@@ -124,7 +124,7 @@ $ratio: 11/17;
 			top: 75%;
 			left: 81%;
 			transform-origin:top center;
-			animation: look-around-eyeF 10s linear .5s infinite;
+			// animation: look-around-eyeF 10s linear .5s infinite;
 		}
 
 	}
@@ -145,7 +145,7 @@ $ratio: 11/17;
 			}
 		
 			.eyeG-pupil{
-				position: relative;
+				// position: absolute;
 				width:30%;
 				top:0%;
 				left:2%;
@@ -359,28 +359,31 @@ $ratio: 11/17;
 
 	.bkgrnd-stripes{
 		// @import'animations';
-
 		.stripe-white-right{
 			width:9%;
 			right:27%;
 			animation: going-up 10s infinite linear;
+			animation-delay: 5s;
 		}
 		.stripe-white-left{
 			width:100%;
 			top:-5%;
 			left:-10%;
 			animation: cream-left-to-right 10s infinite ease-out; 
+			animation-delay: 11s;
 		}
 		.stripe-orange-middle{
 			width:100%;
 			top:40%;
 			animation: orange-right-to-left 5s infinite ease;
+			animation-delay: 8s;
 
 		}
 		.stripe-black-top{
 			width:100%;
 			top:17%;
 			animation: left-to-right 1s infinite linear;
+			animation-delay: 14s;
 		}
 	}
 
