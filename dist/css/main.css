@@ -350,9 +350,15 @@ body {
 }
 
 .poster .body-images .orange-tongue {
+	position: absolute;
 	width: 80%;
 	top: 8.7%;
 	left: 11%;
+}
+
+.poster .body-images .ot-tip {
+	width: 11.3%;
+	left: 35%;
 }
 
 .poster .body-images .navy-tie {
