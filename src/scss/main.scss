@@ -39,12 +39,42 @@ img{
 	position: absolute;
 }
 
+html{
+	height: 100%;
+}
 body {
-	background: #eee;
+	//background: linear-gradient(219deg, #92cfc5, #c05337);
+	//background-size: 400% 400%;
+	//animation: background-gradient 30s ease infinite;
+	//background-image: url('/dist/img/hypnotize.png');
 }
 
 // calculate the ratio of your poster and put it here
 $ratio: 11/17;
+
+.background-image{
+	position: absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	z-index: -99;
+	background-image: url('../img/hypnotize.png');
+}
+
+
+.overlay{
+	position: absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	z-index: -89;
+	opacity: .75;
+	background: linear-gradient(219deg, #92cfc5, #c05337);
+	background-size:400% 400%; 
+	animation: background-gradient 10s ease infinite;
+}
 
 .poster {
 	position: absolute;

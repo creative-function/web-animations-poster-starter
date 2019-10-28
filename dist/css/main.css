@@ -207,6 +207,30 @@ table {
 	}
 }
 
+@-webkit-keyframes background-gradient {
+	0% {
+		background-position: 84% 0%;
+	}
+	50% {
+		background-position: 17% 100%;
+	}
+	100% {
+		background-position: 84% 0%;
+	}
+}
+
+@keyframes background-gradient {
+	0% {
+		background-position: 84% 0%;
+	}
+	50% {
+		background-position: 17% 100%;
+	}
+	100% {
+		background-position: 84% 0%;
+	}
+}
+
 /* 1. Main Layout ================================= */
 * {
 	box-sizing: border-box;
@@ -216,8 +240,33 @@ img {
 	position: absolute;
 }
 
-body {
-	background: #eee;
+html {
+	height: 100%;
+}
+
+.background-image {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: -99;
+	background-image: url("../img/hypnotize.png");
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: -89;
+	opacity: .75;
+	background: -webkit-linear-gradient(231deg, #92cfc5, #c05337);
+	background: linear-gradient(219deg, #92cfc5, #c05337);
+	background-size: 400% 400%;
+	-webkit-animation: background-gradient 10s ease infinite;
+	        animation: background-gradient 10s ease infinite;
 }
 
 .poster {

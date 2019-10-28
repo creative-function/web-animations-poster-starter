@@ -69,3 +69,9 @@
 	75%{transform: rotate(-35deg) translateX(35%) translateY(45%) scale(1);}
 	100%{transform: rotate(-15deg) translateX(30%) translateY(40%) scale(.9);}
 }
+
+@keyframes background-gradient {
+    0%{background-position:84% 0%}
+    50%{background-position:17% 100%}
+    100%{background-position:84% 0%}
+}
